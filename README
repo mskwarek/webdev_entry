@@ -1,0 +1,40 @@
+KODOWANIE I DEKODOWANIE SZYFREM ATBASH
+_______________________________________
+
+	AUTOR: MARCIN SKWAREK
+REAZLIZACJA NA PODSTAWIE ŚRODOWISKA bioweb http://bioweb.sourceforge.net/en/index.html
+autorstwa dra inż. R.Nowaka
+______________________________________
+
+Aplikacja wykorzystuje Python + C++ + JavaScript
+Program szyfruje i odszyfrowyje znaki zakodowane szyfrem AtBash
+______________________________________
+wymagane zależności:
+boost, lighttpd, django, SCons
+______________________________________
+
+Kompilacja
+
+Linux:
+scons
+
+Windows:
+zgodnie z opisem: http://sourceforge.net/projects/bioweb/files/0.07/README/download
+scons
+______________________________________
+
+Test biblioteki w python
+1) scons
+2) cd build_web/AtBashCoderPython
+3) python
+   >>> import AtBash
+   >>> AtBash.Code("abc")
+	'zyx'
+_____________________________________
+
+Uruchomienie
+1) scons
+2) sudo python build_web/manage.py runserver 127.0.0.1:8383
+3) w ulubionej przeglądarce WWW adres: 127.0.0.1:8383
+
+
